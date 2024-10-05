@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/free-vector/colorful-smile-emoticons-pattern_23-2148691351.jpg?w=740&t=st=1720607839~exp=1720608439~hmac=6f8993555b3366a2a50beb38d3580b83c99e2af142f09f9ee41de9fb3e770cb4'); /* Фон зі смайликами */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+.emoji {
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
